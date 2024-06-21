@@ -10,14 +10,25 @@
     <div class="container">
       <h1 class="title">Pomodoro Timer</h1>
 
+      <label for="titleInput">Pomodoro Title:</label>
+      <input type="text" id="titleInput" placeholder="Enter title" />
+
+      <label for="timeInput">Set Minutes:</label>
+      <input type="number" id="timeInput" min="1" placeholder="25" />
+
       <p class="timer" id="timer">25:00</p>
 
       <div class="button-wrapper">
-        <button id="start">start</button>
-        <button id="stop">stop</button>
-        <button id="reset">reset</button>
+        <button id="start">Start</button>
+        <button id="stop">Stop</button>
+        <button id="reset">Reset</button>
       </div>
+
+      <h2>Pomodoro History</h2>
+      <ul id="pomodoro-history"></ul>
     </div>
+
+    <audio id="bell" src="path/to/your/bell-sound.mp3"></audio>
 
     <script src="index.js"></script>
   </body>
